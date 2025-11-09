@@ -1,0 +1,5 @@
+{
+  "name": "Arkham: AI Supply Chain Rerouting",
+  "description": "An AI agent dashboard that monitors geopolitical and trade disruptions, and proposes safe alternative shipment routes in real-time. This demo simulates a scenario where a shipment of semiconductors from Taiwan to the U.S. is rerouted due to emerging risks.",
+  "requestFramePermissions": []
+}

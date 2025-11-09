@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arkham AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+     <style>
+      :root {
+        --background-light: #ffffff;
+        --text-light: #1f2937;
+        --background-dark: #0a0a0a;
+        --text-dark: #e5e5e5;
+      }
+      body {
+        background-color: var(--background-light);
+        color: var(--text-light);
+        font-family: sans-serif;
+      }
+      .dark body {
+        background-color: var(--background-dark);
+        color: var(--text-dark);
+      }
+      .page-bg {
+        background: linear-gradient(-45deg, #f0f2f5, #e5e7eb, #f0f2f5, #e5e7eb);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
+      .dark .page-bg {
+        background: linear-gradient(-45deg, #0a0a0a, #101018, #0a0a0a, #181010);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+      }
+      @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #e5e7eb;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #9ca3af;
+        border-radius: 4px;
+      }
+      .dark .custom-scrollbar::-webkit-scrollbar-track {
+        background: #1f2937;
+      }
+      .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #4b5563;
+      }
+
+      /* Animated Checkmark Styles */
+      .checkmark__circle {
+        stroke-dasharray: 166;
+        stroke-dashoffset: 166;
+        stroke-linecap: round;
+        animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+      }
+      .checkmark__check {
+        transform-origin: 50% 50%;
+        stroke-dasharray: 48;
+        stroke-dashoffset: 48;
+        animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.6s forwards;
+      }
+      @keyframes stroke {
+        100% {
+          stroke-dashoffset: 0;
+        }
+      }
+     </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
