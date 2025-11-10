@@ -1,0 +1,15 @@
+runtime: python311
+
+env_variables:
+  GOOGLE_CLOUD_PROJECT: arkham-ai-477701
+  GOOGLE_CLOUD_LOCATION: us-central1
+  PORT: 8080
+
+automatic_scaling:
+  min_instances: 1
+  max_instances: 10
+
+resources:
+  cpu: 1
+  memory_gb: 2
+
