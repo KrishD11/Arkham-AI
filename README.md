@@ -2,6 +2,8 @@
 
 Arkham AI is an autonomous AI agent that monitors geopolitical risk and trade disruptions, then automatically reroutes shipments to safer routes in real time.
 
+Generate routes for global supply chains.
+
 ## Features
 
 - Real-time Risk Monitoring: Aggregates risk from trade news, political instability, and port congestion
@@ -180,4 +182,3 @@ The application automatically stores all fetched risk data in MongoDB Atlas. Dat
 ## License
 
 MIT
-
